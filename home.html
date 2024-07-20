@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaculture Website</title>
+    <style>
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1, p, #translateButton {
+            margin: 0;
+        }
+
+        #translateButton {
+            margin-top: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+        }
+
+        iframe {
+            width: 560px; /* Adjust the width as needed */
+            height: 315px; /* Adjust the height as needed */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Aquaculture Logo" height="50" width="100">
+        <p>Aqua Career Guide</p>
+        <button id="translateButton">English</button>
+    </header>
+
+    <main>
+        <p class="translatable" data-english="Explore the world of aquaculture and learn how to select the best land for your farming needs." data-telugu="అక్వాకల్చర్ ప్రపంచాన్ని అన్వేషించండి మరియు మీ వ్యవసాయ అవసరాలకు ఉత్తమమైన భూమిని ఎలా ఎంచుకోవాలో తెలుసుకోండి.">Explore the world of aquaculture and learn how to select the best land for your farming needs.</p>
+        <button id="landSelectionButton" class="translatable" data-english="Selecting Land" data-telugu="భూమిని ఎంచుకోవడం">Selecting Land</button>
+    </main>
+
+    <main>
+        <p class="translatable" data-english="Learn how to select the best aquatic species for aquafarming." data-telugu="అక్వాఫార్మింగ్ కోసం ఉత్తమమైన నీటి జంతువులను ఎంచుకోవడం నేరంగా ఎలా ఉందో అనుకుంటారు.">Learn how to select the best aquatic species for aquafarming.</p>
+        <button id="seedsSelectionButton" class="translatable" data-english="Selecting Seeds" data-telugu="విత్తనాలను ఎంచుకోవడం">Selecting Seeds</button>
+    </main>
+
+    <main>
+        <p class="translatable" data-english="Discover proper nutrition and feeding practices for aqua species." data-telugu="అక్వా జంతువులకు సరైన పోషణ మరియు ఆహార విధానాలను అంకితం చేయండి.">Discover proper nutrition and feeding practices for aqua species.</p>
+        <button id="nutrition" class="translatable" data-english="Nutrition and Feeding" data-telugu="పోషణ మరియు ఆహార">Nutrition and Feeding</button>
+    </main>
+
+    <!-- Embedding YouTube Video -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ce0pgI9WaTU" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition and Feeding for Aqua Species</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        h1 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #blinkingText {
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1,
+        p,
+        #translateButton {
+            margin: 0;
+        }
+
+        #translateButton {
+            margin-top: 10px;
+        }
+
+        .feeding-factors li {
+            margin-bottom: 20px;
+        }
+
+        .feeding-factors h3 {
+            cursor: pointer;
+            color: #3366cc;
+            border-bottom: 1px solid #3366cc;
+            padding-bottom: 5px;
+        }
+
+        .feeding-factors ul {
+            padding-left: 20px;
+        }
+
+        .feeding-factors li div {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+        .video-container {
+            text-align: center;
+        }
+
+        iframe {
+            width: 560px; /* Adjust the width as needed */
+            height: 315px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="logo.html"><img src="logo.jpg" alt="Aquaculture Logo" height="50" width="100"></a></h1>
+        <p><h1 id="blinkingText" style="color: #ccc;">Click on headings to read more information</h1></p>
+        <p class="subtitle">Nutrition and Feeding for Aqua Species</p>
+    </header>
+    <main id="one">
+        <section class="intro-section">
+            <h2 style="color: #fefdfd;border: black;">Proper Nutrition and Feeding Practices</h2>
+            <p>Proper nutrition and feeding are essential for the health and growth of aqua species in aquafarming. Here are some key considerations:</p>
+        </section>
+        <section class="factors-section">
+            <ul class="feeding-factors">
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="balancedDiet">1. Balanced Diet</h3>
+                        <ul id="balancedDiet" class="hidden">
+                            <li>
+                                Ensure your aquatic species receive a balanced diet that includes essential nutrients such as proteins, fats, carbohydrates, vitamins, and minerals. The diet should be tailored to the specific species you are farming.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="feedingFrequency">2. Feeding Frequency</h3>
+                        <ul id="feedingFrequency" class="hidden">
+                            <li>
+                                Establish a regular feeding schedule that matches the species' feeding behavior and metabolic rate. Some species require frequent small meals, while others thrive with larger, less frequent feedings.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="feedQuality">3. Feed Quality</h3>
+                        <ul id="feedQuality" class="hidden">
+                            <li>
+                                Use high-quality, nutritionally balanced feed to meet the dietary requirements of your aqua species. Consider factors like pellet size, buoyancy, and sinking rates to match the feeding habits of your species.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="waterQuality">4. Water Quality</h3>
+
+                        <ul id="waterQuality" class="hidden">
+                            <li>
+                                Maintain good water quality as it directly impacts the health and appetite of your aquatic species. Proper filtration, aeration, and waste management are crucial.
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="monitoring">5. Monitoring and Adjustments</h3>
+
+                        <ul id="monitoring" class="hidden">
+                            <li>
+                                Regularly monitor the growth and health of your aquatic species. Adjust feeding amounts and schedules as needed. Avoid overfeeding, which can lead to water pollution and health problems.
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="environmentalFactors">6. Environmental Factors</h3>
+                        <ul id="environmentalFactors" class="hidden">
+                            <li>
+                                Consider environmental factors like temperature, oxygen levels, and pH, as they can affect feeding behavior and nutrient absorption. Adapt your feeding practices accordingly.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="toggle-button" data-target="diseasePrevention">7. Disease Prevention</h3>
+
+                        <ul id="diseasePrevention" class="hidden">
+                            <li>
+                                Implement biosecurity measures to prevent diseases. Quarantine new stock, maintain hygiene, and ensure feed is not contaminated to protect the health of your aqua species.
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="visual-section">
+
+        </section>
+        <section class="testimonials-section">
+
+        </section>
+    </main>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ce0pgI9WaTU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <button id="backToHomeButton">Back to Home</button>
+    <script src="script1.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement.style.display === 'none' || targetElement.style.display === '') {
+                        targetElement.style.display = 'block';
+                    } else {
+                        targetElement.style.display = 'none';
+                    }
+                });
+            });
+
+            const languageToggle = document.getElementById('translateButton');
+            const body = document.body;
+            let isEnglish = true;
+
+            languageToggle.addEventListener('click', function () {
+                isEnglish = !isEnglish;
+
+                if (isEnglish) {
+                    body.setAttribute('lang', 'en');
+                    languageToggle.textContent = 'Telugu';
+                } else {
+                    body.setAttribute('lang', 'te');
+                    languageToggle.textContent = 'English';
+                }
+            });
+        });
+        document.getElementById("backToHomeButton").addEventListener("click", function () {
+
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+
+</html>

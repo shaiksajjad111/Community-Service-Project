@@ -1,0 +1,65 @@
+/* Attractive interface styles (adjust as desired) */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #3399cc;
+    color: white;
+    padding: 20px;
+    text-align: right; /* Align button to the right */
+}
+
+header img {
+    float: left;
+    height: 80px;
+    margin-right: 20px;
+}
+
+#translateButton {
+    background-color: #fff;
+    color: #3399cc;
+    border: 1px solid #3399cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ... rest of your CSS styles */
+/* Basic styling for the header and main content */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #3399cc;
+    color: white;
+    padding: 20px;
+    text-align: right; /* Align button to the right */
+}
+
+header img {
+    float: left;
+    height: 80px;
+    margin-right: 20px;
+}
+
+#translateButton {
+    background-color: #fff;
+    color: #3399cc;
+    border: 1px solid #3399cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Additional styling for buttons, text, etc. */
+
